@@ -63,6 +63,10 @@ subprojects {
     repositories {
         mavenCentral()
         maven {
+            name = "NeoForge"
+            url = "https://maven.neoforged.net/releases/"
+        }
+        maven {
             name = 'Sponge / Mixin'
             url = 'https://repo.spongepowered.org/repository/maven-public/'
         }
@@ -86,6 +90,7 @@ subprojects {
                 "group": project.group, //Else we target the task's group.
                 "minecraft_version": minecraft_version,
                 "forge_version": forge_version,
+                "neoforge_version": neoforge_version,
                 "forge_loader_version_range": forge_loader_version_range,
                 "forge_version_range": forge_version_range,
                 "minecraft_version_range": minecraft_version_range,
